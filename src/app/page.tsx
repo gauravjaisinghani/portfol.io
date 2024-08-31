@@ -1,4 +1,5 @@
 import Image from "next/image";
+import logo from "./something.png"
 
 export default function Home() {
   return (
@@ -6,7 +7,7 @@ export default function Home() {
       <div className="relative mb-4">
         <Image
           className="relative"
-          src="/something.png"
+          src={logo}
           alt="Next.js Logo"
           width={180}
           height={37}
