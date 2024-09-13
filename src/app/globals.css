@@ -7,3 +7,10 @@
     text-wrap: balance;
   }
 }
+
+/* App.css */
+
+.title-name {
+  /* Add smooth transition for position changes */
+  transition: all 0.5s ease;
+}

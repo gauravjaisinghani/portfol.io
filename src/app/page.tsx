@@ -1,28 +1,15 @@
-import Image from "next/image";
-import logo from "./something.png"
+import { Syne } from "next/font/google";
 
-export default function Home() {
+const syne = Syne({
+    subsets: ['latin'],
+    display: 'swap',
+    weight: ['700']
+  })
+
+export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col text-white items-center p-4 bg-[#6e61e9]">
-      <div className="relative mb-4">
-        <Image
-          className="relative"
-          src={logo}
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-      <hr className="w-full"/>
-      <div className="w-full items-center flex flex-col">
-        <p className="m-8">Content Section Goes here</p>
-        <div className="flex w-full justify-evenly flex-wrap">
-          <div className="mb-8 rounded-md min-w-80 h-80 border border-solid border-white bg-white shadow-md"></div>
-          <div className="mb-8 rounded-md min-w-80 h-80 border border-solid border-white bg-white shadow-md"></div>
-          <div className="mb-8 rounded-md min-w-80 h-80 border border-solid border-white bg-white shadow-md"></div>
-        </div>
-      </div>
+    <main className={`flex min-h-screen flex-col text-white md:justify-center px-6 py-4 bg-[#1B1B1E] ${syne.className}`}>
+      <p className="title-name text-2xl md:text-6xl md:ml-8 mb-20">Gaurav Jaisinghani</p>
     </main>
   );
 }
