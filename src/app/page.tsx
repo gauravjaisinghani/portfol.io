@@ -8,7 +8,7 @@ const syne = Syne({
 
 export default function Page() {
   return (
-    <main className={`flex min-h-screen flex-col text-white md:justify-center px-6 py-4 bg-[#1B1B1E] ${syne.className}`}>
+    <main className={`flex min-h-screen flex-col text-white justify-center px-6 py-4 bg-[#1B1B1E] ${syne.className}`}>
       <p className="title-name text-2xl md:text-6xl md:ml-8 mb-20">Gaurav Jaisinghani</p>
     </main>
   );
